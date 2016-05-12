@@ -83,4 +83,37 @@ body {
 
 }
 
+.avatar {
+    background-image: url('https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAjKAAAAJGVjODg0YjAzLWNiMTYtNDYwYy1iNTQ3LTRiNmQ2YmVjMzNlNg.jpg');
+    border-radius: 100%;
+    background-size: cover;
+    width:100px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto -50px auto;
+    border: 2px solid #18bc9c;
+}
+
+a.th-logo.navbar-text {
+    color: #fff;
+    background: #2c3e50;
+    border-radius: 100%;
+    border: 6px solid #2c3e50;
+    margin: 9px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a.navbar-text.th-logo:hover {
+    background: #fff;
+    border-color: #fff;
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.navbar-fixed-bottom .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 </style>
