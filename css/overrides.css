@@ -1,5 +1,3 @@
-<style type="text/css">
-
 dt {
 }
 
@@ -9,7 +7,6 @@ h1 {
 }
 
 /* Fine tune section heads */
-
 h3 {
     margin-top: 24px;
 }
@@ -48,41 +45,13 @@ h2#references ~ p {
   padding-left:40px;
 }
 
-/* PDF button */
-.pdfdownload a {
-    position: absolute;
-    top: -65px;
-    right: 0;
-}
-.pdfdownload {
-      position: relative;
-}
-
 /*Padding for the navbar*/
 body {
     padding-top: 70px;
     padding-bottom: 70px;
 }
 
-/* Mobile layout */
-@media (max-width: 600px) {
-    dt {
-    	float: none;
-    	clear: none;
-    	width: 100%;
-    }
-    dd {
-    	margin-left: 40px;
-	}
-    .pdfdownload a {
-    top: 0;
-    right: 0;
-    left: 0;
-    width: 100px;
-    margin: 0 auto;}
-
-}
-
+/*Cheesy photo*/
 .avatar {
     background-image: url('https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAjKAAAAJGVjODg0YjAzLWNiMTYtNDYwYy1iNTQ3LTRiNmQ2YmVjMzNlNg.jpg');
     border-radius: 100%;
@@ -94,26 +63,47 @@ body {
     border: 2px solid #18bc9c;
 }
 
-a.th-logo.navbar-text {
+/*"Brand" logo*/
+i.th-logo {
+  color: #18bc9c;
+  font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size:16px;
+  font-weight: bold;
+}
+i.th-logo:hover {
+  color: #fff;
+}
+.navbar-brand {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/*hamburger toggle navigation*/
+.navbar-inverse .navbar-toggle.collapsed, .navbar-inverse .navbar-toggle {
+    padding: 4px;
+    border: 0;
     color: #fff;
-    background: #2c3e50;
-    border-radius: 100%;
-    border: 6px solid #2c3e50;
-    margin: 9px 0;
-    font-size: 20px;
-    font-weight: bold;
+    margin: 10px 15px;
 }
-
-a.navbar-text.th-logo:hover {
-    background: #fff;
-    border-color: #fff;
+.navbar-inverse .navbar-toggle.collapsed:hover, .navbar-inverse .navbar-toggle:hover {
+    background:transparent;
     color: #2c3e50;
-    text-decoration: none;
 }
 
-.navbar-fixed-bottom .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
+/* Mobile layout */
+@media (max-width: 768px) {
+    .navbar-fixed-bottom {
+        display: none;
+    }
+    body {
+        padding-bottom: 0px;
+    }
+    dt {
+        float: none;
+        clear: none;
+        width: 100%;
+    }
+    dd {
+        margin-left: 40px;
+    }
 }
-
-</style>
